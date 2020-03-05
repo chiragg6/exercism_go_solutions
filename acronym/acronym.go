@@ -13,7 +13,7 @@ func Abbreviate(s string) string {
 	prior := ' '
 	acronym := make([]rune, 0)
 	for _, c := range s {
-		if prior == ' ' || prior == '-' {
+		if prior == ' ' || prior == '-' || prior == '_' {
 			if c != ' ' && c != '_' && c != '-' {
 				acronym = append(acronym, unicode.ToUpper(c))
 
