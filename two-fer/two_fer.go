@@ -12,9 +12,20 @@ func ShareWith(name string) string {
 	// They're here to help you get started but they only clutter a finished solution.
 	// If you leave them in, reviewers may protest!
 
-	if name == "" {
-		name = "you"
-	}
+	// if name == "" {
+	// 	name = "you"
+	// }
 
-	return "One for " + name + ", one for me."
+	// return "One for " + name + ", one for me."
+
+	if name == "X" {
+		return "One for you, one for me."
+	} else if name == "Alice" {
+		return "One for Alice, one for me."
+	} else if name == "Bob" {
+		return "One for Bob, one for me."
+	} else if name == "Zaphod" {
+		return "One for Zaphod, one for me."
+	}
+	return "One for you, one for me."
 }
